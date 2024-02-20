@@ -18,7 +18,7 @@ const router = createBrowserRouter(
             <Route path="create" action={createAction} />
             <Route path="update/:id" action={updateAction} />
             <Route path="delete/:id" action={deleteAction} />
-            <Route path='*' element={<Navigate to='/' replace />} />
+            <Route path='index.html' element={<Navigate to='/' replace />} />
         </Route>
     )
 )
