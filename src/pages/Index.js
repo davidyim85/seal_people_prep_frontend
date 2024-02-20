@@ -1,7 +1,9 @@
+
 import { Form, Link, useLoaderData } from "react-router-dom"
 
 function Index(props) {
     const people = useLoaderData()
+
 
     return (
         < div >

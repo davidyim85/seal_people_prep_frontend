@@ -11,6 +11,7 @@ export const createAction = async ({ request }) => {
         image: formData.get("image"),
         title: formData.get("title"),
     }
+ 
     // Send new person to our API
     await fetch(URL + "/people", {
         method: "post",
@@ -19,6 +20,7 @@ export const createAction = async ({ request }) => {
         },
         body: JSON.stringify(newPerson),
     })
+
     // redirect to index
     return redirect("/")
 }
